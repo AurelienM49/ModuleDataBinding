@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "ModuleDataBinding"
 include ':app'
 include ':moduledatabinding'
+include ':vraioufaux'

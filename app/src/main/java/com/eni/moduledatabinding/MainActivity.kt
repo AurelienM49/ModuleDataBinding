@@ -18,13 +18,10 @@ class MainActivity : AppCompatActivity() {
         val sibeth : User = User("Ndiaye", "Sibeth", "1979", "F")
 
         val faker = faker{ fakerConfig { locale="fr" }}
-        val user1 : User = User(
-            faker.name.lastName(),
-            faker.name.firstName(),
-            (1900..2000).random().toString(),
+        val user1 : User = User(faker.name.lastName(),
+            faker.name.firstName(), (1900..2000).random().toString(),
             faker.gender.types())
-
-        amb.user = user1
+        amb.user = manu
 
     }
 }
