@@ -16,3 +16,4 @@ rootProject.name = "ModuleDataBinding"
 include ':app'
 include ':moduledatabinding'
 include ':vraioufaux'
+include ':navigationmod5'
