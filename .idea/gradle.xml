@@ -11,7 +11,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/modnavapi" />
             <option value="$PROJECT_DIR$/moduledatabinding" />
+            <option value="$PROJECT_DIR$/navigationmod5" />
+            <option value="$PROJECT_DIR$/tpcolorme" />
             <option value="$PROJECT_DIR$/vraioufaux" />
           </set>
         </option>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/prenomFragment">
+
+    <fragment
+        android:id="@+id/prenomFragment"
+        android:name="com.eni.tpcolorme.PrenomFragment"
+        android:label="fragment_prenom"
+        tools:layout="@layout/fragment_prenom" >
+        <action
+            android:id="@+id/action_prenomFragment_to_nomDate"
+            app:destination="@id/nomDate" />
+        <action
+            android:id="@+id/action_prenomFragment_to_nomMot"
+            app:destination="@id/nomMot" />
+    </fragment>
+    <fragment
+        android:id="@+id/nomDate"
+        android:name="com.eni.tpcolorme.NomDate"
+        android:label="fragment_nom_date"
+        tools:layout="@layout/fragment_nom_date" >
+        <action
+            android:id="@+id/action_nomDate_to_bleuFragment"
+            app:destination="@id/bleuFragment" />
+        <action
+            android:id="@+id/action_nomDate_to_orangeFragment"
+            app:destination="@id/orangeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nomMot"
+        android:name="com.eni.tpcolorme.NomMot"
+        android:label="fragment_nom_mot"
+        tools:layout="@layout/fragment_nom_mot" >
+        <action
+            android:id="@+id/action_nomMot_to_jauneFragment"
+            app:destination="@id/jauneFragment" />
+        <action
+            android:id="@+id/action_nomMot_to_vertFragment"
+            app:destination="@id/vertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bleuFragment"
+        android:name="com.eni.tpcolorme.BleuFragment"
+        android:label="fragment_bleu"
+        tools:layout="@layout/fragment_bleu" />
+    <fragment
+        android:id="@+id/jauneFragment"
+        android:name="com.eni.tpcolorme.JauneFragment"
+        android:label="fragment_jaune"
+        tools:layout="@layout/fragment_jaune" />
+    <fragment
+        android:id="@+id/orangeFragment"
+        android:name="com.eni.tpcolorme.OrangeFragment"
+        android:label="fragment_orange"
+        tools:layout="@layout/fragment_orange" />
+    <fragment
+        android:id="@+id/vertFragment"
+        android:name="com.eni.tpcolorme.VertFragment"
+        android:label="fragment_vert"
+        tools:layout="@layout/fragment_vert" />
+</navigation>

@@ -1,14 +1,17 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'androidx.navigation.safeargs'
 }
 
 android {
     compileSdk 32
 
+    buildFeatures{
+        dataBinding true
+    }
+
     defaultConfig {
-        applicationId "com.eni.navigationmod5"
+        applicationId "com.eni.tpcolorme"
         minSdk 21
         targetSdk 32
         versionCode 1
